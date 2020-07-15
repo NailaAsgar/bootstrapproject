@@ -74,3 +74,25 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+@mixin modal-color{
+    .modal-body {
+        background: $background-pale;
+    }
+    
+    .modal-header {
+        background: $background-dark;
+        color: floralwhite;
+    }
+    
+    .close {
+        color: $background-pale;
+    }
+}
+#reserveModal{
+    @include modal-color()
+}
+
+#loginModal {
+    @include modal-color()
+}
